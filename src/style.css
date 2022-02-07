@@ -25,12 +25,17 @@ main {
 }
 .job-listing {
   display: block;
+  margin-top: 100px;
 }
 .job {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+.job-description {
+  width: 80%;
 }
 .job-description,
 .job-tags {
@@ -38,6 +43,10 @@ main {
   margin: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.job-tags-name {
+  display: flex;
+  align-items: center;
 }
 .job-name {
   margin-left: 25px;
@@ -80,4 +89,73 @@ main {
   padding: 0.8rem 1rem;
   border-radius: 2px;
   vertical-align: middle;
+}
+.tag-list:hover {
+  background-color: hsl(180, 8%, 52%);
+  color: white;
+  cursor: pointer;
+}
+.featured {
+  border-left: 5px solid hsl(180, 8%, 52%);
+}
+.featured-tag {
+  border: 1px solid black;
+  background-color: hsl(180, 14%, 20%);
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 10px;
+}
+.new-tag {
+  border: 1px solid hsl(180, 8%, 52%);
+  background-color: hsl(180, 8%, 52%);
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 10px;
+}
+.company-logo {
+  height: 80%;
+}
+.search-bar {
+  position: absolute;
+  width: 80%;
+  top: 22%;
+  background-color: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  bottom: 10%;
+  margin-bottom: 20px;
+  height: 60px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.search-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.search-tag {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(180, 31%, 95%);
+}
+.tag-names {
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  padding: 5px;
+}
+.delete-tag {
+  padding: 5px;
+  background-color: hsl(180, 8%, 52%);
+  color: white;
+  align-items: center;
+}
+.clear-search {
+  padding-right: 15px;
+}
+.hidden {
+  display: none;
 }
